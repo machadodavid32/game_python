@@ -51,7 +51,7 @@ class Calcular:
             return randint(0, 100)
         elif self.dificuldade == 3:
             return randint(0, 1000)
-        elif self.dificudade == 4:
+        elif self.dificuldade == 4:
             return randint(0, 10000)
         else:
             return randint(0, 100000)
@@ -82,13 +82,13 @@ class Calcular:
             certo = True
 
         else:
+            print('Resposta errada!')
 
-
-
-
+        print(f'{self.valor1} {self._op_simbolo} {self.valor2} = {self.resultado}')
+        return certo
 
     def mostrar_operacao(self: object) -> None:
-        pass
+        print(f'{self.valor1} {self._op_simbolo} {self.valor2} = ?')
 
 
 
